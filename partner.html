@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaponBytes Finance - Our Partners</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #ffffff;
+            color: #111827;
+        }
+
+
+        /* =====================================================
+           PARTNERS SECTION
+        ===================================================== */
+
+        .partners-section {
+            width: 100%;
+            min-height: 650px;
+
+            padding: 90px 20px 100px;
+
+            position: relative;
+            overflow: hidden;
+
+            /* YOUR BACKGROUND IMAGE */
+            background-image:
+               
+                url("https://wallpapers.com/images/hd/white-abstract-hexagons-wshg1akmqzklnrmo.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        /* =====================================================
+           CONTAINER
+        ===================================================== */
+
+        .partners-container {
+            width: 100%;
+            max-width: 1150px;
+            margin: auto;
+            text-align: center;
+        }
+
+
+        /* =====================================================
+           SMALL HEADING
+        ===================================================== */
+
+        .partners-small-title {
+            font-size: 23px;
+            font-weight: 600;
+
+            color: #241f9c;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.5px;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* =====================================================
+           MAIN HEADING
+        ===================================================== */
+
+        .partners-title {
+            font-size: 28px;
+            font-weight: 600;
+
+            line-height: 1.3;
+
+            color: #111827;
+
+            margin-bottom: 55px;
+        }
+
+
+        /* =====================================================
+           PARTNER GRID
+        ===================================================== */
+
+        .partners-grid {
+            width: 100%;
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 24px;
+        }
+
+
+        /* =====================================================
+           PARTNER CARD
+        ===================================================== */
+
+        .partner-card {
+            height: 105px;
+
+            background: rgba(255, 255, 255, 0.97);
+
+            border: 1px solid #eeeeee;
+
+            border-radius: 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 18px 25px;
+
+            box-shadow:
+                0 4px 15px rgba(0, 0, 0, 0.05);
+
+            transition: all 0.3s ease;
+        }
+
+
+        /* =====================================================
+           CARD HOVER
+        ===================================================== */
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.10);
+        }
+
+
+        /* =====================================================
+           PARTNER LOGO IMAGE
+        ===================================================== */
+
+        .partner-card img {
+            width: 100%;
+            max-width: 180px;
+
+            height: 150px;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+
+        /* Different size for some logos */
+
+        .partner-card img.bajaj-logo {
+            max-width: 165px;
+        }
+
+        .partner-card img.fullerton-logo {
+            max-width: 175px;
+        }
+
+        .partner-card img.kotak-logo {
+            max-width: 180px;
+        }
+
+
+        /* =====================================================
+           BUTTON
+        ===================================================== */
+
+        .partners-button-wrapper {
+            width: 100%;
+
+            margin-top: 40px;
+
+            text-align: left;
+        }
+
+
+        .partners-button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 10px;
+
+            padding: 13px 25px;
+
+            background: #087ed8;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            border-radius: 6px;
+
+            font-size: 15px;
+            font-weight: 500;
+
+            transition: all 0.3s ease;
+        }
+
+
+        .partners-button:hover {
+            background: #0565ae;
+
+            transform: translateY(-2px);
+        }
+
+
+        .partners-button-arrow {
+            font-size: 21px;
+
+            line-height: 1;
+        }
+
+
+        /* =====================================================
+           TABLET
+           768px - 1024px
+        ===================================================== */
+
+        @media (max-width: 1024px) {
+
+            .partners-section {
+                padding: 75px 30px 80px;
+            }
+
+
+            .partners-container {
+                max-width: 850px;
+            }
+
+
+            .partners-title {
+                font-size: 32px;
+
+                margin-bottom: 45px;
+            }
+
+
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 20px;
+            }
+
+
+            .partner-card {
+                height: 105px;
+            }
+
+
+            .partner-card img {
+                max-width: 190px;
+
+                height: 60px;
+            }
+
+
+            .partners-button-wrapper {
+                margin-top: 35px;
+            }
+        }
+
+
+        /* =====================================================
+           MOBILE
+           BELOW 767px
+        ===================================================== */
+
+        @media (max-width: 767px) {
+
+            .partners-section {
+
+                padding: 60px 18px 70px;
+
+                background-image:
+                    linear-gradient(
+                        rgba(255, 255, 255, 0.95),
+                        rgba(255, 255, 255, 0.95)
+                    ),
+                    url("finance-bg.jpg");
+
+                background-size: cover;
+
+                background-position: center;
+            }
+
+
+            .partners-small-title {
+                font-size: 11px;
+
+                margin-bottom: 9px;
+            }
+
+
+            .partners-title {
+                font-size: 25px;
+
+                line-height: 1.35;
+
+                margin-bottom: 35px;
+            }
+
+
+            /* One card per row */
+
+            .partners-grid {
+                grid-template-columns: 1fr;
+
+                gap: 15px;
+            }
+
+
+            .partner-card {
+
+                height: 90px;
+
+                border-radius: 10px;
+
+                padding: 15px 25px;
+            }
+
+
+            .partner-card img {
+
+                max-width: 180px;
+
+                height: 55px;
+            }
+
+
+            .partners-button-wrapper {
+
+                text-align: center;
+
+                margin-top: 30px;
+            }
+
+
+            .partners-button {
+
+                width: 100%;
+
+                max-width: 240px;
+
+                padding: 12px 20px;
+            }
+        }
+
+
+        /* =====================================================
+           SMALL MOBILE
+        ===================================================== */
+
+        @media (max-width: 400px) {
+
+            .partners-section {
+                padding: 50px 15px 60px;
+            }
+
+
+            .partners-title {
+                font-size: 23px;
+            }
+
+
+            .partner-card {
+                height: 85px;
+            }
+
+
+            .partner-card img {
+                max-width: 165px;
+
+                height: 50px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         OUR PARTNERS
+    ===================================================== -->
+
+    <section class="partners-section">
+
+        <div class="partners-container">
+
+
+            <!-- Small Heading -->
+
+            <div class="partners-small-title">
+                 PARTNERS WITH US
+            </div>
+
+
+            <!-- Main Heading -->
+
+            <h2 class="partners-title">
+                Partnering with Leading Financial Institutions.
+            </h2>
+
+
+            <!-- =================================================
+                 PARTNER LOGOS
+            ================================================= -->
+
+            <div class="partners-grid">
+
+
+                <!-- HDFC BANK -->
+
+                <div class="partner-card">
+
+                    <img
+                        src="img/hdfc-logo.jpg"
+                        alt="HDFC Bank">
+
+                </div>
+
+
+                <!-- ICICI BANK -->
+
+                <div class="partner-card">
+
+                    <img
+                        src="img/icic-logo.png"
+                        alt="ICICI Bank">
+
+                </div>
+
+
+                <!-- AXIS BANK -->
+
+                <div class="partner-card">
+
+                    <img
+                        src="img/axis-logo (2).png"
+                        alt="Axis Bank">
+
+                </div>
+
+
+                <!-- BAJAJ FINSERV -->
+
+                <div class="partner-card">
+
+                    <img
+                        class="bajaj-logo"
+                        src="img/bajaj -logo (2).png"
+                        alt="Bajaj Finserv">
+
+                </div>
+
+
+                <!-- TATA CAPITAL -->
+
+                <div class="partner-card">
+
+                    <img
+                        src="img/tata-logo.webp"
+                        alt="Tata Capital">
+
+                </div>
+
+
+                <!-- FULLERTON INDIA -->
+
+                <div class="partner-card">
+
+                    <img
+                        class="fullerton-logo"
+                        src="img/fullerton-logo.webp"
+                        alt="Fullerton India">
+
+                </div>
+
+
+                <!-- IDFC FIRST BANK -->
+
+                <div class="partner-card">
+
+                    <img
+                        src="img/idfc-logo (2).jpg"
+                        alt="IDFC First Bank">
+
+                </div>
+
+
+                <!-- KOTAK MAHINDRA BANK -->
+
+                <div class="partner-card">
+
+                    <img
+                        class="kotak-logo"
+                        src="img/kotak-logo.png"
+                        alt="Kotak Mahindra Bank">
+
+                </div>
+
+
+            </div>
+
+
+        
+
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
