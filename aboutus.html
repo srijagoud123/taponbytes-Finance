@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | TaponBytes Finance</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* =====================================================
+   GLOBAL STYLES
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #222222;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   ABOUT HERO
+===================================================== */
+
+.about-hero {
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url("img/aboutus-logo.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+
+
+
+
+/* Hero text */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+
+.hero-content span {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+
+.hero-content h1 {
+    font-size: 38px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+
+.about-section {
+    padding: 70px 20px;
+
+    background: #ffffff;
+}
+
+
+.about-container {
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+/* =====================================================
+   IMAGE AREA
+===================================================== */
+
+.about-images {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 450px;
+}
+
+
+/* Images */
+
+.image-box {
+    position: absolute;
+
+    overflow: hidden;
+}
+
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Top image */
+
+.image-one {
+    width: 62%;
+
+    height: 190px;
+
+    left: 0;
+    top: 0;
+}
+
+
+/* Bottom image */
+
+.image-two {
+    width: 62%;
+
+    height: 205px;
+
+    left: 0;
+    bottom: 0;
+}
+
+
+/* Image overlay */
+
+.image-one::after,
+.image-two::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(6, 53, 95, 0.18);
+}
+
+
+/* =====================================================
+   CENTER BLUE BOX
+===================================================== */
+
+.today-box {
+    position: absolute;
+
+    width: 210px;
+    height: 140px;
+
+    left: 28%;
+    top: 155px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #07375f;
+
+    border: 5px solid #ffffff;
+
+    color: #ffffff;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+
+    z-index: 3;
+}
+
+
+.today-box h3 {
+    font-size: 20px;
+
+    line-height: 1.45;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   ABOUT CONTENT
+===================================================== */
+
+.about-content {
+    padding: 10px 0;
+}
+
+
+.about-content > h2 {
+    color: #333333;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    margin-bottom: 18px;
+}
+
+
+.about-content > h2 strong {
+    font-weight: 700;
+}
+
+
+.about-content > p {
+    color: #777777;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 12px;
+
+    text-align: justify;
+}
+
+
+/* =====================================================
+   MISSION / VISION / STRATEGY
+===================================================== */
+
+.about-point {
+    margin-top: 20px;
+
+    margin-bottom: 17px;
+}
+
+
+.about-point h3 {
+    color: #153c60;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+
+.about-point p {
+    color: #777777;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   WHY CHOOSE US
+===================================================== */
+
+.why-section {
+    padding: 75px 20px 85px;
+
+    background: #ffffff;
+}
+
+
+/* Heading */
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+.heading-line {
+    width: 42px;
+    height: 4px;
+
+    background: #402de6;
+
+    margin: 0 auto 10px;
+
+    border-radius: 3px;
+}
+
+
+.section-heading h2 {
+    font-size: 30px;
+
+    color: #171717;
+
+    font-weight: 700;
+}
+
+
+.section-heading p {
+    font-size: 13px;
+
+    color: #0f0f0f;
+
+    margin-top: 3px;
+}
+
+
+.heading-bottom {
+    width: 45px;
+    height: 3px;
+
+    background: #402de6;
+
+
+    margin: 12px auto 0;
+}
+
+
+/* =====================================================
+   FEATURE GRID
+===================================================== */
+
+.features-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 45px;
+
+    row-gap: 50px;
+}
+
+
+/* Feature */
+
+.feature-card {
+    text-align: center;
+}
+
+
+/* Icon */
+
+.feature-icon {
+    width: 54px;
+    height: 54px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    border: 2px solid #402de6;
+
+
+    color: #402de6;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 19px;
+
+    background: #ffffff;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Active icon */
+
+.feature-card.active .feature-icon {
+    background: #402de6;
+
+
+    color: #ffffff;
+}
+
+
+/* Hover */
+
+.feature-card:hover .feature-icon {
+    background:#402de6;
+
+
+    color: #ffffff;
+
+    transform: translateY(-4px);
+}
+
+
+/* Feature title */
+
+.feature-card h3 {
+    font-size: 14px;
+
+    color: #222222;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* Feature text */
+
+.feature-card p {
+    font-size: 12px;
+
+    color: #888888;
+
+    line-height: 1.7;
+
+    max-width: 180px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   TABLET VIEW
+===================================================== */
+
+@media (max-width: 991px) {
+
+    /* Hero */
+
+    .about-hero {
+        height: 280px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+
+    /* About */
+
+    .about-container {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+    }
+
+
+    .about-images {
+        min-height: 400px;
+    }
+
+
+    .today-box {
+        width: 185px;
+
+        height: 125px;
+
+        left: 25%;
+
+        top: 140px;
+    }
+
+
+    .today-box h3 {
+        font-size: 18px;
+    }
+
+
+    .about-content > h2 {
+        font-size: 20px;
+    }
+
+
+    .about-content > p {
+        font-size: 11px;
+    }
+
+
+    /* Features */
+
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        column-gap: 70px;
+
+        row-gap: 45px;
+
+        max-width: 650px;
+    }
+
+
+    .feature-card p {
+        max-width: 230px;
+
+        font-size: 10px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE VIEW
+===================================================== */
+
+@media (max-width: 767px) {
+
+
+    /* Hero */
+
+    .about-hero {
+        height: 230px;
+    }
+
+
+    .hero-content span {
+        font-size: 10px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 30px;
+
+        margin-top: 4px;
+    }
+
+
+
+    /* About section */
+
+    .about-section {
+        padding: 50px 18px;
+    }
+
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+
+    /* Images */
+
+    .about-images {
+        min-height: 360px;
+
+        max-width: 480px;
+
+        margin: 0 auto;
+    }
+
+
+    .image-one {
+        width: 65%;
+
+        height: 155px;
+    }
+
+
+    .image-two {
+        width: 65%;
+
+        height: 165px;
+    }
+
+
+    .today-box {
+        width: 180px;
+
+        height: 120px;
+
+        left: 28%;
+
+        top: 125px;
+    }
+
+
+    .today-box h3 {
+        font-size: 17px;
+    }
+
+
+
+    /* About text */
+
+    .about-content {
+        text-align: left;
+    }
+
+
+    .about-content > h2 {
+        font-size: 21px;
+    }
+
+
+    .about-content > p {
+        font-size: 11px;
+
+        line-height: 1.8;
+
+        text-align: left;
+    }
+
+
+    .about-point h3 {
+        font-size: 14px;
+    }
+
+
+    .about-point p {
+        font-size: 10px;
+    }
+
+
+
+    /* Why section */
+
+    .why-section {
+        padding: 55px 18px 65px;
+    }
+
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+
+    /* Features */
+
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 40px 20px;
+    }
+
+
+    .feature-icon {
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 17px;
+    }
+
+
+    .feature-card h3 {
+        font-size: 11px;
+    }
+
+
+    .feature-card p {
+        font-size: 8px;
+
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+
+    /* Hero */
+
+    .about-hero {
+        height: 210px;
+    }
+
+
+    .hero-content span {
+        font-size: 9px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+
+
+    /* Images */
+
+    .about-images {
+        min-height: 320px;
+    }
+
+
+    .image-one {
+        height: 135px;
+    }
+
+
+    .image-two {
+        height: 145px;
+    }
+
+
+    .today-box {
+        width: 155px;
+
+        height: 105px;
+
+        top: 108px;
+
+        left: 26%;
+    }
+
+
+    .today-box h3 {
+        font-size: 15px;
+    }
+
+
+
+    /* Features */
+
+    .features-container {
+        gap: 35px 12px;
+    }
+
+
+    .feature-icon {
+        width: 46px;
+
+        height: 46px;
+
+        font-size: 15px;
+    }
+
+
+    .feature-card p {
+        font-size: 8px;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         ABOUT US HERO
+    ====================================================== -->
+
+    <section class="about-hero"> </section>
+
+
+
+    <!-- =====================================================
+         ABOUT SECTION
+    ====================================================== -->
+
+    <section class="about-section">
+        <div class="about-container">
+
+            <!-- LEFT IMAGE AREA -->
+
+            <div class="about-images">
+                <div class="image-box image-one">
+                    <img src="image/about img1.jpg"
+                        alt="TaponBytes Finance Team">
+                </div>
+
+
+                <div class="image-box image-two">
+
+                    <img src="image/about img2.jpg"
+                        alt="Financial Discussion">
+
+                </div>
+
+
+                <!-- CENTER BOX -->
+
+                <div class="today-box">
+
+                    <h3>Smart Financial.</h3>
+                    <h3>Solutions.</h3>
+                    <h3>Better Future.</h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT CONTENT -->
+
+            <div class="about-content">
+
+                <h2>
+                    Making Your <strong>Financial Journey</strong> Simpler.
+                </h2>
+
+
+                <p>
+                    At <strong>TaponBytes Finance</strong>, we believe that the right
+                    financial support can help you move confidently towards your goals.
+                    We provide simple, reliable and transparent financial solutions
+                    designed around your needs.
+                </p>
+
+
+                <p>
+                    Whether you are planning for your future, managing your financial
+                    requirements or looking for suitable loan solutions, our team is
+                    here to guide you with clarity and confidence.
+                </p>
+
+
+
+                <!-- MISSION -->
+
+                <div class="about-point">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To provide simple, transparent and reliable financial solutions
+                        that help individuals achieve their financial goals with confidence.
+                    </p>
+                </div>
+
+
+
+                <!-- VISION -->
+
+                <div class="about-point">
+
+                    <h3>Our Vision</h3>
+
+                    <p>
+                        To become a trusted financial partner by delivering dependable
+                        solutions and creating a smooth financial experience for every customer.
+                    </p>
+
+                </div>
+
+
+
+                <!-- STRATEGY -->
+
+                <div class="about-point">
+
+                    <h3>Our Strategy</h3>
+
+                    <p>
+                        We focus on understanding customer needs, providing suitable
+                        financial options and maintaining transparency throughout the process.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WHY CHOOSE US
+    ====================================================== -->
+
+    <section class="why-section">
+
+
+        <!-- SECTION TITLE -->
+
+        <div class="section-heading">
+
+            <div class="heading-line"></div>
+
+            <h2>Why to choose us</h2>
+
+            <p>As always, partners grow with you!</p>
+
+            <div class="heading-bottom"></div>
+
+        </div>
+
+
+
+        <!-- FEATURES -->
+
+        <div class="features-container">
+
+
+            <!-- 1. PROFESSIONAL -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                </div>
+
+                <h3>Professional</h3>
+
+                <p>
+                    Professional guidance and support to help you make
+                    confident financial decisions.
+                </p>
+
+            </div>
+
+
+
+            <!-- 2. EXPERIENCED -->
+
+            <div class="feature-card active">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                </div>
+
+                <h3>Experienced</h3>
+
+                <p>
+                    A dedicated approach focused on understanding your
+                    financial requirements and goals.
+                </p>
+
+            </div>
+
+
+
+            <!-- 3. RELIABLE -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                </div>
+
+                <h3>Reliable</h3>
+
+                <p>
+                    Dependable financial solutions with a
+                    customer-first approach at every step.
+                </p>
+
+            </div>
+
+
+
+            <!-- 4. PERSONALIZED -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                </div>
+
+                <h3>Personalized</h3>
+
+                <p>
+                    Financial guidance designed according to your
+                    individual requirements and circumstances.
+                </p>
+
+            </div>
+
+
+
+            <!-- 5. EFFICIENT -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                </div>
+
+                <h3>Efficient</h3>
+
+                <p>
+                    We aim to make your financial journey simple,
+                    clear and convenient.
+                </p>
+
+            </div>
+
+
+
+            <!-- 6. HONESTY -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-handshake"></i>
+
+                </div>
+
+                <h3>Honesty</h3>
+
+                <p>
+                    We believe in clear communication and transparent
+                    financial solutions.
+                </p>
+
+            </div>
+
+
+
+            <!-- 7. EXPERTS -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-user-tie"></i>
+
+                </div>
+
+                <h3>Experts</h3>
+
+                <p>
+                    Dedicated support to help you understand your
+                    available financial options.
+                </p>
+
+            </div>
+
+
+
+            <!-- 8. QUALITY -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <h3>Quality</h3>
+
+                <p>
+                    We focus on delivering a smooth and trustworthy
+                    experience for every customer.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
