@@ -357,7 +357,9 @@ header {
 }
 
 
-/* LEFT CONTENT */
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
 
 .home-content {
   width: 50%;
@@ -367,7 +369,9 @@ header {
 }
 
 
-/* Small Badge */
+/* =========================================================
+   SMALL BADGE
+========================================================= */
 
 .home-heading {
   display: inline-block;
@@ -389,7 +393,9 @@ header {
 }
 
 
-/* Main Heading */
+/* =========================================================
+   MAIN HEADING
+========================================================= */
 
 .home-content h1 {
   margin: 0;
@@ -413,7 +419,9 @@ header {
 }
 
 
-/* Description */
+/* =========================================================
+   DESCRIPTION
+========================================================= */
 
 .home-content p {
   margin-top: 18px;
@@ -473,7 +481,9 @@ header {
 }
 
 
-/* Arrow Circle */
+/* =========================================================
+   ARROW CIRCLE
+========================================================= */
 
 .arrow-circle {
   width: 30px;
@@ -495,12 +505,12 @@ header {
 
 /* =========================================================
    HOME IMAGE
+   DESKTOP + TABLET
 ========================================================= */
 
 .home-image {
   width: 52%;
   height: 450px;
-
   position: absolute;
   right: 0;
   top: 0;
@@ -513,10 +523,8 @@ header {
 .hero-image {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   object-position: center;
-
   display: block;
 }
 
@@ -579,14 +587,15 @@ header {
 
     font-size: 11px;
   }
-
- 
 }
 
 
 /* =========================================================
    HOME MOBILE
    0px - 768px
+
+   IMPORTANT:
+   HERO IMAGE IS HIDDEN ON MOBILE
 ========================================================= */
 
 @media screen and (max-width: 768px) {
@@ -595,7 +604,11 @@ header {
     min-height: auto;
     background: #061d4f;
     background-size: cover;
-   
+  }
+
+  /* REMOVE HAND / HERO IMAGE ON MOBILE */
+  .home-image {
+    display: none;
   }
 
   .home-container {
@@ -671,8 +684,6 @@ header {
 
     font-size: 14px;
   }
-
-  
 }
 
 
@@ -694,7 +705,7 @@ header {
     font-size: 13px;
   }
 
-  .apply-btn{
+  .apply-btn {
     width: 215px;
     min-width: 215px;
   }
@@ -993,85 +1004,101 @@ button {
   color: #33405a;
 }
 
-                /*counter section*/
+
+/* =========================================================
+   COUNTER SECTION
+========================================================= */
+
+.stats-section {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+
+  background-image:
+    url("https://i.pinimg.com/originals/91/9a/d0/919ad03662b2dab2ecf4066fb42f550f.jpg");
+
+  background-size: 100%;
+
+  color: rgb(245, 245, 245);
+
+  padding: 20px 20px;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.stat-box {
+  flex: 1 1 200px;
+
+  margin: 10px;
+
+  max-width: 25000px;
+
+  padding: 10px;
+
+  background-color: rgba(66, 65, 65, 0.08);
+
+  border-radius: 50%;
+
+  box-shadow: 0 4px 4px rgba(214, 30, 30, 0.1);
+
+  transition: transform 0.3s ease;
+
+  font-size: 35px;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 48px;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 18px;
+}
 
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+/* =========================================================
+   COUNTER MOBILE
+========================================================= */
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-    }
+@media (max-width: 768px) {
 
-    .stats-section {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      background-image: url("https://i.pinimg.com/originals/91/9a/d0/919ad03662b2dab2ecf4066fb42f550f.jpg");
-      background-size: 100%;
-      color: rgb(245, 245, 245);
-      padding: 20px 20px;
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      text-align: center;
-    
-    }
+  .stats-section {
+    flex-direction: column;
 
-    .stat-box {
-      flex: 1 1 200px;
-      margin: 10px;
-      max-width: 25000px;
-      padding: 10px;
-      background-color: rgba(66, 65, 65, 0.08);
-      border-radius: 50%;
-      box-shadow: 0 4px 4px rgba(214, 30, 30, 0.1);
-      transition: transform 0.3s ease;
-      font-size: 35px;
-      
-    
-     
-    }
+    align-items: center;
 
-    .stat-box:hover {
-      transform: translateY(-5px);
-    }
+    padding: 10px 10px;
 
-    .stat-number {
-      font-size: 48px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+    background-size: 700%;
+  }
 
-    .stat-label {
-      font-size: 18px;
-    }
+  .stat-box {
+    width: 70%;
 
-    @media (max-width: 768px) {
-      .stats-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 10px;
-        background-size: 700%;
-      }
+    margin: 10px 0;
 
-      .stat-box {
-        width: 70%;
-        margin: 10px 0;
-        font-size: 28px;
-      }
+    font-size: 28px;
+  }
 
-      .stat-number {
-        font-size: 40px;
-      }
+  .stat-number {
+    font-size: 40px;
+  }
 
-      .stat-label {
-        font-size: 16px;
-      }
-    }
-
+  .stat-label {
+    font-size: 16px;
+  }
+}
 
 
 /* =========================================================
@@ -1081,10 +1108,6 @@ button {
 .why-section {
   background: #eef7ff;
 
-  /*
-     THIS IS THE IMPORTANT CHANGE:
-     More space above the heading.
-  */
   padding: 35px 6% 20px;
 }
 
@@ -1192,10 +1215,6 @@ button {
 }
 
 
-
-
-
-
 /* =========================================================
    LARGE TABLET
    1024px - 1200px
@@ -1210,9 +1229,6 @@ button {
     padding-right: 3%;
   }
 
-  /*
-     Keep proper top gap for WHY section
-  */
   .why-section {
     padding-top: 35px;
   }
@@ -1327,8 +1343,6 @@ button {
   .why-heading h2 {
     font-size: 19px;
   }
-
- 
 }
 
 
@@ -1339,7 +1353,9 @@ button {
 
 @media (max-width: 767px) {
 
-  /* TOP FEATURES */
+  /* =====================================================
+     TOP FEATURES
+  ===================================================== */
 
   .top-area {
     padding: 10px 12px;
@@ -1390,7 +1406,9 @@ button {
   }
 
 
-  /* MIDDLE */
+  /* =====================================================
+     MIDDLE
+  ===================================================== */
 
   .middle-section {
     padding: 18px 12px;
@@ -1404,14 +1422,14 @@ button {
     margin-bottom: 25px;
   }
 
-  
   .section-title h3 {
     font-size: 11px;
   }
 
 
-
-  /* PARTNERS */
+  /* =====================================================
+     PARTNERS
+  ===================================================== */
 
   .partners-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1424,10 +1442,10 @@ button {
 
     font-size: 12px;
   }
+
   .partner-card img {
     max-width: 65%;
     max-height: 70px;
-  
   }
 
   .partners-button {
@@ -1437,7 +1455,9 @@ button {
   }
 
 
-  /* LOANS */
+  /* =====================================================
+     LOANS
+  ===================================================== */
 
   .loans-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1453,6 +1473,7 @@ button {
 
   .loan-icon {
     width: 25px;
+
     min-width: 25px;
 
     font-size: 18px;
@@ -1469,18 +1490,11 @@ button {
   }
 
 
-}
-
-
   /* =====================================================
-     WHY CHOOSE MOBILE
+     WHY CHOOSE
   ===================================================== */
 
   .why-section {
-    /*
-       Proper gap between the top border
-       and WHY CHOOSE heading
-    */
     padding: 30px 12px 20px;
   }
 
@@ -1491,10 +1505,6 @@ button {
   .why-heading h2 {
     font-size: 20px;
 
-    /*
-       IMPORTANT:
-       Changed from 3.4 to normal line-height
-    */
     line-height: 1.4;
 
     margin: 0 0 6px;
@@ -1509,7 +1519,9 @@ button {
   }
 
 
-  /* BENEFITS */
+  /* =====================================================
+     BENEFITS
+  ===================================================== */
 
   .benefits-grid {
     grid-template-columns: 1fr 1fr;
@@ -1545,7 +1557,7 @@ button {
 
     line-height: 1.45;
   }
-
+}
 
 
 /* =========================================================
@@ -1584,9 +1596,7 @@ button {
   }
 
 
-  /*
-     Small mobile WHY spacing
-  */
+  /* Small mobile WHY spacing */
 
   .why-section {
     padding: 25px 12px 20px;
@@ -1594,7 +1604,9 @@ button {
 
   .why-heading h2 {
     font-size: 18px;
+
     line-height: 1.4;
+
     margin-bottom: 6px;
   }
 
@@ -1658,7 +1670,9 @@ button {
 }
 
 
-/* Ready Section Mobile */
+/* =========================================================
+   READY SECTION MOBILE
+========================================================= */
 
 @media (max-width: 768px) {
 
@@ -1791,7 +1805,9 @@ ul {
 }
 
 
-/* Footer Quick Links */
+/* =========================================================
+   FOOTER QUICK LINKS
+========================================================= */
 
 .Footer-2 {
   font-size: 16px;
@@ -1814,7 +1830,9 @@ ul {
 }
 
 
-/* Footer Services */
+/* =========================================================
+   FOOTER SERVICES
+========================================================= */
 
 .Footer-3 {
   font-size: 14px;
@@ -1835,7 +1853,9 @@ ul {
 }
 
 
-/* Footer Contact */
+/* =========================================================
+   FOOTER CONTACT
+========================================================= */
 
 .Footer-4 {
   padding-left: 30px;
@@ -1850,10 +1870,9 @@ ul {
 }
 
 
-
-
-
-/* Footer Bottom */
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
 
 .Footer-bottom {
   height: 15%;
