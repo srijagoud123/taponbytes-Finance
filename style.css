@@ -351,7 +351,6 @@ header {
   max-width: 1536px;
   min-height: 450px;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   position: relative;
@@ -494,41 +493,6 @@ header {
 }
 
 
-/* Eligibility Button */
-
-.eligibility-btn {
-  min-width: 215px;
-  height: 50px;
-
-  padding: 0 12px 0 22px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background: transparent;
-
-  color: #ffffff;
-
-  border: 1px solid #0878ff;
-  border-radius: 5px;
-
-  text-decoration: none;
-
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-
-  transition: 0.3s ease;
-}
-
-.eligibility-btn:hover {
-  background: rgba(8, 120, 255, 0.15);
-}
-
-
-
-
 /* =========================================================
    HOME IMAGE
 ========================================================= */
@@ -601,11 +565,9 @@ header {
     gap: 12px;
   }
 
-  .apply-btn,
-  .eligibility-btn {
+  .apply-btn {
     min-width: 170px;
     height: 45px;
-
     font-size: 13px;
     padding-left: 15px;
   }
@@ -698,8 +660,7 @@ header {
     gap: 12px;
   }
 
-  .apply-btn,
-  .eligibility-btn {
+  .apply-btn {
     width: 230px;
 
     min-width: 230px;
@@ -731,8 +692,7 @@ header {
     font-size: 13px;
   }
 
-  .apply-btn,
-  .eligibility-btn {
+  .apply-btn{
     width: 215px;
     min-width: 215px;
   }
@@ -964,7 +924,7 @@ button {
 
 .partner-card img {
   max-width: 85%;
-  max-height: 180px;
+  max-height: 160px;
 
   object-fit: contain;
 }
@@ -1030,6 +990,86 @@ button {
 
   color: #33405a;
 }
+
+                /*counter section*/
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .stats-section {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      background-image: url("https://i.pinimg.com/originals/91/9a/d0/919ad03662b2dab2ecf4066fb42f550f.jpg");
+      background-size: 100%;
+      color: rgb(245, 245, 245);
+      padding: 20px 20px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      text-align: center;
+    
+    }
+
+    .stat-box {
+      flex: 1 1 200px;
+      margin: 10px;
+      max-width: 25000px;
+      padding: 10px;
+      background-color: rgba(66, 65, 65, 0.08);
+      border-radius: 50%;
+      box-shadow: 0 4px 4px rgba(214, 30, 30, 0.1);
+      transition: transform 0.3s ease;
+      font-size: 35px;
+      
+    
+     
+    }
+
+    .stat-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .stat-number {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .stats-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px;
+        background-size: 700%;
+      }
+
+      .stat-box {
+        width: 70%;
+        margin: 10px 0;
+        font-size: 28px;
+      }
+
+      .stat-number {
+        font-size: 40px;
+      }
+
+      .stat-label {
+        font-size: 16px;
+      }
+    }
+
 
 
 /* =========================================================
@@ -1149,41 +1189,6 @@ button {
   color: #344158;
 }
 
-
-/* =========================================================
-   WHATSAPP
-========================================================= */
-
-.whatsapp {
-  position: fixed;
-
-  right: 27px;
-  bottom: 48px;
-
-  width: 55px;
-  height: 55px;
-
-  border-radius: 50%;
-
-  background: #20c765;
-
-  color: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 30px;
-
-  box-shadow:
-    0 4px 12px rgba(0,0,0,.2);
-
-  z-index: 1000;
-}
-
-.whatsapp:hover {
-  transform: scale(1.06);
-}
 
 
 
@@ -1321,15 +1326,7 @@ button {
     font-size: 19px;
   }
 
-  .whatsapp {
-    width: 50px;
-    height: 50px;
-
-    right: 18px;
-    bottom: 20px;
-
-    font-size: 27px;
-  }
+ 
 }
 
 
@@ -1411,6 +1408,7 @@ button {
   }
 
 
+
   /* PARTNERS */
 
   .partners-grid {
@@ -1423,6 +1421,11 @@ button {
     height: 58px;
 
     font-size: 12px;
+  }
+  .partner-card img {
+    max-width: 65%;
+    max-height: 70px;
+  
   }
 
   .partners-button {
@@ -1456,12 +1459,15 @@ button {
   }
 
   .loan-card h4 {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .loan-card p {
-    font-size: 8px;
+    font-size: 12px;
   }
+
+
+}
 
 
   /* =====================================================
@@ -1481,7 +1487,7 @@ button {
   }
 
   .why-heading h2 {
-    font-size: 17px;
+    font-size: 20px;
 
     /*
        IMPORTANT:
@@ -1493,7 +1499,7 @@ button {
   }
 
   .why-heading p {
-    font-size: 9px;
+    font-size: 15px;
 
     line-height: 1.5;
 
@@ -1516,7 +1522,7 @@ button {
   }
 
   .benefit-icon {
-    width: 35px;
+    width: 40px;
     height: 35px;
 
     min-width: 35px;
@@ -1527,30 +1533,17 @@ button {
   }
 
   .benefit-card h4 {
-    font-size: 9.5px;
+    font-size: 15px;
 
     margin-bottom: 4px;
   }
 
   .benefit-card p {
-    font-size: 8px;
+    font-size: 12px;
 
     line-height: 1.45;
   }
 
-
-  /* WHATSAPP */
-
-  .whatsapp {
-    width: 46px;
-    height: 46px;
-
-    right: 14px;
-    bottom: 15px;
-
-    font-size: 24px;
-  }
-}
 
 
 /* =========================================================
@@ -1576,6 +1569,19 @@ button {
     min-height: 80px;
   }
 
+  .benefit-card h4 {
+    font-size: 10px;
+
+    margin-bottom: 4px;
+  }
+
+  .benefit-card p {
+    font-size: 8px;
+
+    line-height: 1.45;
+  }
+
+
   /*
      Small mobile WHY spacing
   */
@@ -1585,13 +1591,13 @@ button {
   }
 
   .why-heading h2 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
     margin-bottom: 6px;
   }
 
   .why-heading p {
-    font-size: 8.5px;
+    font-size: 10px;
   }
 }
 
@@ -1616,7 +1622,7 @@ button {
 }
 
 .Ready-to-start h2 {
-  font-size: 35px;
+  font-size: 28px;
 
   color: #fefeff;
 }
@@ -1842,19 +1848,7 @@ ul {
 }
 
 
-/* Social Icons */
 
-.img-icon {
-  width: 25px;
-
-  height: 25px;
-
-  margin-right: 10px;
-}
-
-a {
-  text-decoration: none;
-}
 
 
 /* Footer Bottom */
