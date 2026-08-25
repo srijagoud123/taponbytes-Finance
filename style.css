@@ -1008,96 +1008,257 @@ button {
 /* =========================================================
    COUNTER SECTION
 ========================================================= */
+/* =========================================================
+   COUNTER SECTION
+   ========================================================= */
 
-.stats-section {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+   .stats-section {
+    width: 100%;
+    min-height: 300px;
 
-  background-image:
-    url("https://i.pinimg.com/originals/91/9a/d0/919ad03662b2dab2ecf4066fb42f550f.jpg");
+    background: #101014;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/011/641/938/non_2x/blue-abstract-background-design-blue-corporate-background-use-for-business-corporate-institution-poster-template-party-festive-seminar-illustration-free-vector.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  background-size: 100%;
+    gap: 55px;
 
-  color: rgb(245, 245, 245);
+    padding: 70px 60px;
 
-  padding: 20px 20px;
+    box-sizing: border-box;
 
-  display: flex;
-
-  flex-wrap: nowrap;
-
-  justify-content: center;
-
-  text-align: center;
-}
-
-.stat-box {
-  flex: 1 1 200px;
-
-  margin: 10px;
-
-  max-width: 25000px;
-
-  padding: 10px;
-
-  background-color: rgba(66, 65, 65, 0.08);
-
-  border-radius: 50%;
-
-  box-shadow: 0 4px 4px rgba(214, 30, 30, 0.1);
-
-  transition: transform 0.3s ease;
-
-  font-size: 35px;
-}
-
-.stat-box:hover {
-  transform: translateY(-5px);
-}
-
-.stat-number {
-  font-size: 48px;
-
-  font-weight: bold;
-
-  margin-bottom: 10px;
-}
-
-.stat-label {
-  font-size: 18px;
+    overflow: hidden;
 }
 
 
 /* =========================================================
-   COUNTER MOBILE
-========================================================= */
+   INDIVIDUAL COUNTER CARD
+   ========================================================= */
 
-@media (max-width: 768px) {
+.stat-box {
+    width: 200px;
+    height: 200px;
 
-  .stats-section {
+    background: #20232b;
+background-image: url("");
+    border-radius: 7px;
+
+    border: 1px solid #292d36;
+
+    display: flex;
     flex-direction: column;
-
     align-items: center;
+    justify-content: center;
 
-    padding: 10px 10px;
+    position: relative;
 
-    background-size: 700%;
-  }
+    box-sizing: border-box;
 
-  .stat-box {
-    width: 70%;
+    padding: 20px 10px;
 
-    margin: 10px 0;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
 
-    font-size: 28px;
-  }
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
 
-  .stat-number {
-    font-size: 40px;
-  }
 
-  .stat-label {
+/* =========================================================
+   GREEN BOTTOM BORDER
+   ========================================================= */
+
+.stat-box::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 11px;
+
+    background: #d4d8dd;
+
+    border-radius:
+        0 0 7px 7px;
+}
+
+
+/* =========================================================
+   HOVER EFFECT
+   ========================================================= */
+
+.stat-box:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.stat-icon {
+    color: #dde0e6;
+
+    font-size: 42px;
+
+    line-height: 1;
+
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.stat-number {
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    margin-bottom: 12px;
+
+    white-space: nowrap;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.stat-label {
+    color: #eeeeee;
+
+    font-family: "Poppins", sans-serif;
+
     font-size: 16px;
-  }
+
+    font-weight: 400;
+
+    line-height: 1.3;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   DESKTOP — ALL 5 IN ONE ROW
+   ========================================================= */
+
+@media (min-width: 1100px) {
+
+    .stats-section {
+        flex-wrap: nowrap;
+    }
+
+    .stat-box {
+        flex: 0 0 200px;
+    }
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .stats-section {
+        gap: 25px;
+        padding: 60px 25px;
+    }
+
+    .stat-box {
+        width: 180px;
+        height: 190px;
+    }
+
+    .stat-number {
+        font-size: 42px;
+    }
+
+    .stat-icon {
+        font-size: 36px;
+    }
+
+    .stat-label {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .stats-section {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .stat-box {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .stats-section {
+        flex-direction: column;
+
+        gap: 25px;
+
+        padding: 50px 20px;
+    }
+
+    .stat-box {
+        width: 100%;
+        max-width: 280px;
+
+        height: 200px;
+    }
+
+    .stat-number {
+        font-size: 44px;
+    }
+
+    .stat-icon {
+        font-size: 38px;
+    }
+
+    .stat-label {
+        font-size: 15px;
+    }
 }
 
 

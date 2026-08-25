@@ -392,87 +392,156 @@
 
 <!--Responsive counter section-->
 
-<div class=" stats-section">
-    <div class="stat-box">
-      <i class="fa-solid fa-building-columns"></i>
-      <div class="stat-number" data-target="35" data-suffix="+">0</div>
-      <div class="stat-label">Bank & NBFC Tie-ups</div>
-    </div>
+<!-- ================= COUNTER SECTION ================= -->
+
+<section class="stats-section">
 
     <div class="stat-box">
-      <i class="fa-solid fa-handshake"></i>
-      <div class="stat-number" data-target="5000" data-suffix="+">0</div>
-      <div class="stat-label">Customers Assisted</div>
+        <div class="stat-icon">
+            <i class="fa-solid fa-building-columns"></i>
+        </div>
+
+        <div class="stat-number"
+             data-target="35"
+             data-suffix="+">
+            0
+        </div>
+
+        <div class="stat-label">
+            Bank &amp; NBFC Tie-ups
+        </div>
     </div>
+
 
     <div class="stat-box">
-      <i class="fa-solid fa-money-bill-wave"></i>
-      <div class="stat-number" data-target="100" data-prefix="₹" data-suffix="cr+">0</div>
-      <div class="stat-label"> Loans Facilitated </div>
+        <div class="stat-icon">
+            <i class="fa-solid fa-handshake"></i>
+        </div>
+
+        <div class="stat-number"
+             data-target="5000"
+             data-suffix="+">
+            0
+        </div>
+
+        <div class="stat-label">
+            Customers Assisted
+        </div>
     </div>
+
 
     <div class="stat-box">
-      <i class="fa-solid fa-headset"></i>
-      <div class="stat-number" data-target="24">0</div>
-      <div class="stat-label">/7 Customer support</div>
+        <div class="stat-icon">
+            <i class="fa-solid fa-money-bill-wave"></i>
+        </div>
+
+        <div class="stat-number"
+             data-target="100"
+             data-prefix="₹"
+             data-suffix="cr+">
+            0
+        </div>
+
+        <div class="stat-label">
+            Loans Facilitated
+        </div>
     </div>
+
+
     <div class="stat-box">
-      <i class="fa-solid fa-list-check"></i>
-      <div class="stat-number" data-target="8" data-suffix="+">0</div>
-      <div class="stat-label">Loan Categories</div>
+        <div class="stat-icon">
+            <i class="fa-solid fa-headset"></i>
+        </div>
+
+        <div class="stat-number"
+             data-target="24">
+            0
+        </div>
+
+        <div class="stat-label">
+            /7 Customer Support
+        </div>
     </div>
-    
-  </div>
 
-  <script>
 
-    const counters = document.querySelectorAll('.stat-number');
-    
-    const animateCounters = () => {
-    
-        counters.forEach(counter => {
-    
-            const target = Number(counter.getAttribute('data-target'));
-    
-            const prefix = counter.getAttribute('data-prefix') || '';
-            const suffix = counter.getAttribute('data-suffix') || '';
-    
-            let count = 0;
-    
-            const duration = 2000;
-            const steps = 100;
-    
-            const increment = target / steps;
-            const delay = duration / steps;
-    
-            const updateCount = () => {
-    
-                count += increment;
-    
-                if (count < target) {
-    
-                    counter.innerText =
-                        prefix + Math.floor(count) + suffix;
-    
-                    setTimeout(updateCount, delay);
-    
-                } else {
-    
-                    counter.innerText =
-                        prefix + target + suffix;
-    
-                }
-            };
-    
-            updateCount();
-    
-        });
-    
-    };
-    
-    animateCounters();
-    
-    </script>
+    <div class="stat-box">
+        <div class="stat-icon">
+            <i class="fa-solid fa-list-check"></i>
+        </div>
+
+        <div class="stat-number"
+             data-target="8"
+             data-suffix="+">
+            0
+        </div>
+
+        <div class="stat-label">
+            Loan Categories
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= COUNTER SCRIPT ================= -->
+
+<script>
+
+const counters = document.querySelectorAll(".stat-number");
+
+const animateCounters = () => {
+
+    counters.forEach(counter => {
+
+        const target = Number(
+            counter.getAttribute("data-target")
+        );
+
+        const prefix =
+            counter.getAttribute("data-prefix") || "";
+
+        const suffix =
+            counter.getAttribute("data-suffix") || "";
+
+        let count = 0;
+
+        const duration = 2000;
+        const steps = 100;
+
+        const increment = target / steps;
+        const delay = duration / steps;
+
+        const updateCount = () => {
+
+            count += increment;
+
+            if (count < target) {
+
+                counter.innerText =
+                    prefix +
+                    Math.floor(count) +
+                    suffix;
+
+                setTimeout(updateCount, delay);
+
+            } else {
+
+                counter.innerText =
+                    prefix +
+                    target +
+                    suffix;
+            }
+        };
+
+        updateCount();
+
+    });
+
+};
+
+animateCounters();
+
+</script>
 
 
 <!-- ================= WHY CHOOSE US ================= -->
